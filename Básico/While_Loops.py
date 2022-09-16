@@ -37,4 +37,4 @@ while True:
         break
 print("Sequência finalizada")
 
-#For Loop
+

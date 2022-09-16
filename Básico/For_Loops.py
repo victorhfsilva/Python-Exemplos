@@ -45,3 +45,10 @@ for i in [0,1]:
         print(str(i)+str(j),end=" ")
 else:
     print()
+    
+#Continue - Pula a impressão dos valores pares
+for i in range(10):
+    if(i%2 == 0):
+        continue
+    print(i, end=" ")
+print()
