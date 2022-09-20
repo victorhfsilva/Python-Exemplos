@@ -13,7 +13,12 @@ class PartyPeople:
     
     #Destructor
     def __del__(self):
-        print("The objecto was destructed")
+        print("The object was destructed")
+        
+    #To-String
+    def __repr__(self):
+    	return "The party is rocking. There are {} persons.".format(self.persons)
+    	
 
 #Inheritance
 class PartyGirls(PartyPeople):
