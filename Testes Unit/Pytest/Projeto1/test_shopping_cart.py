@@ -35,3 +35,10 @@ def test_total_price(cart):
     }
     assert cart.get_total_price(price_map) == 3.0, "The total price doesn't match."
 
+
+def test_print_items(cart, capsys):
+    cart.add("orange")
+    cart.add("apple")
+    cart.print_items()
+    out, err = capsys.readouterr()
+    assert out == "orange\napple\n"

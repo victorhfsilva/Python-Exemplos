@@ -24,4 +24,6 @@ class ShoppingCart:
             total_price += price_map[item]
         return total_price
 
-    
+    def print_items(self):
+        for item in self.items:
+            print(item)
